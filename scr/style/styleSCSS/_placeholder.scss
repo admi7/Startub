@@ -1,0 +1,108 @@
+
+@import './variable';
+
+
+%flex {
+     display: flex;
+     flex-wrap: wrap;
+}
+
+%flex-center {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+%flex-evenly {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+
+%flex-center-evenly {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+
+%flex-between {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+%flex-center-between {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+%column {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+}
+
+%column-center {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     flex-direction: column;
+}
+
+%column-evenly {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+%column-center-evenly {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-evenly;
+}
+
+
+%column-between {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+%column-center-between {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+
+
+//    ************************* MES CLASSES *******************
+
+%btn {
+     padding: 5px 7px;
+     border-radius: 5px;
+     text-transform: uppercase;
+}
+%btn-success {
+     background-color: $success;
+     color: black;
+}
+%btn-blue {
+     background-color: $blue;
+     color: black;
+}
+%btn-alert {
+     background-color: $alert;
+     color: black;
+}

@@ -1,0 +1,71 @@
+.btn-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav, ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  padding: 5px 7px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: #2ce42c;
+  color: black;
+}
+
+body {
+  background-color: #131212;
+  color: #fff5fb;
+}
+
+nav, ul {
+  padding: 7px;
+}
+
+ul {
+  width: 300px;
+}
+
+li {
+  list-style-type: none;
+  margin: 3px 5px;
+}
+
+li a {
+  color: #fff5fb;
+}
+
+.btn-contact {
+  background: whitesmoke;
+  border: 2px solid whitesmoke;
+  -webkit-box-shadow: 0 0 7px whitesmoke;
+          box-shadow: 0 0 7px whitesmoke;
+  border-radius: 7px;
+  width: 125px;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */

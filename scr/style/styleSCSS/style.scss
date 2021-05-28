@@ -1,0 +1,45 @@
+
+@import './_variable.scss';
+@import './_placeholder.scss';
+
+
+
+
+body {
+     background-color: $color_principale;
+     color: $color_secondaire;
+}
+
+
+nav, ul {
+     @extend %flex-center-between;
+     padding: 7px;
+}
+
+ul {
+     width: 300px
+}
+
+li {
+     list-style-type: none;
+     margin: 3px 5px;
+}
+
+li a {
+     color: $color_secondaire;
+}
+
+.btn {
+     @extend %btn;
+     @extend %btn-success;
+}
+
+.btn-contact {
+     @extend %flex-center-evenly;
+     background: whitesmoke;
+     border: 2px solid whitesmoke;
+     box-shadow: 0 0 7px whitesmoke;
+     border-radius: 7px;
+     width: 125px;
+     height: 30px;
+}
