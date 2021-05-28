@@ -10,6 +10,10 @@ body {
      color: $color_secondaire;
 }
 
+.page {
+     @extend %width-100;
+     background-color: red;
+}
 
 nav, ul {
      @extend %flex-center-between;
@@ -42,4 +46,20 @@ li a {
      border-radius: 7px;
      width: 125px;
      height: 30px;
+}
+
+
+.blockContain {
+     @extend %flex-center-between;
+     background-color: green;
+}
+
+.block {
+     @extend %flex-center-evenly;
+     background-color: $color_secondaire;
+     color: $color_principale;
+     width: 300px;
+     height: 200px;
+     margin: 5px;
+     border-radius: 10px;
 }

@@ -1,4 +1,4 @@
-.btn-contact {
+.btn-contact, .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +12,7 @@
           justify-content: space-evenly;
 }
 
-nav, ul {
+nav, ul, .blockContain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +24,10 @@ nav, ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.page {
+  width: 100%;
 }
 
 .btn {
@@ -40,6 +44,10 @@ nav, ul {
 body {
   background-color: #131212;
   color: #fff5fb;
+}
+
+.page {
+  background-color: red;
 }
 
 nav, ul {
@@ -67,5 +75,18 @@ li a {
   border-radius: 7px;
   width: 125px;
   height: 30px;
+}
+
+.blockContain {
+  background-color: green;
+}
+
+.block {
+  background-color: #fff5fb;
+  color: #131212;
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

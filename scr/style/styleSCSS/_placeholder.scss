@@ -85,6 +85,18 @@
      justify-content: space-between;
 }
 
+%width-100 {
+     width: 100%;
+}
+%width-100-height-100 {
+     width: 100%;
+     height: 100%;
+}
+
+%width-100v-height-100v {
+     width: 100vw;
+     height: 100vh;
+}
 
 
 //    ************************* MES CLASSES *******************

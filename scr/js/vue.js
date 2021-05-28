@@ -1,4 +1,10 @@
-alert('vue')
 
+import { clients } from "./datebase.js";
 
-export default (vue)
+export var app = new Vue({
+     el: '#app',
+     data: {
+          message: 'Hello Vue !',
+          clients,
+     }
+})
