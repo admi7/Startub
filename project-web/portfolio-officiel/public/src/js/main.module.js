@@ -1,23 +1,26 @@
 
+import { colors } from "./jquery/style.js";
+console.log(colors)
 
 
 //              ********************    LIBRERIE INTEGRE DANS LE SITE    ************************
-export const user = document.getElementById('user')
-export const input = document.getElementById('input')
 
-user.innerText = ''
+import {cookie} from "../../log/cookie.js";
+
+cookie()
+
 
 //              ********************    PORTE ENTRER    ************************
 
 import { saisi } from './in-out/in.js'
 
-saisi()
+saisi('hello')
 
 //              ********************    PORTE SORTIE    ************************
 
 import {logUser} from './in-out/out.js'
 
-logUser('coucou')
+logUser()
 
 //              ********************    FIN    ************************
 

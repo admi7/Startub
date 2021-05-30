@@ -1,6 +1,6 @@
 
 
-import {user} from '../main.module.js'
+// import {user} from '../main.module.js'
 
 
 export const logUser = function(value){

@@ -1,0 +1,23 @@
+
+@import './dist/variable';
+@import './dist/placeholder';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    @extend %column-evenly;
+}
+nav {
+    @extend %flex-center-between;
+    background-color: red;
+    padding: 20px;
+}
