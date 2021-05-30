@@ -1,20 +1,29 @@
 
 
 
+//              ********************    LIBRERIE INTEGRE DANS LE SITE    ************************
+export const user = document.getElementById('user')
+export const input = document.getElementById('input')
+
+user.innerText = ''
+
 //              ********************    PORTE ENTRER    ************************
 
-import {menu, user} from './in-out/in.js'
+import { saisi } from './in-out/in.js'
 
-console.log(user)
-console.log(menu.value)
-
-
+saisi()
 
 //              ********************    PORTE SORTIE    ************************
 
+import {logUser} from './in-out/out.js'
 
-
-
-
+logUser('coucou')
 
 //              ********************    FIN    ************************
+
+//              ********************    TEST DE MES FUNCTIONS    ************************
+
+
+
+
+

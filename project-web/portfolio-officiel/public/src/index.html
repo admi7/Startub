@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="./js/lib/jquery.js"></script>
+    <script src="./js/lib/vue.js"></script>
 
     <title>Portfolio de MOUHAMADOU DIALLO </title>
 </head>
+
 <body>
     <main id="app">
         <header>
             <nav id="nav">
+                <strong>LOGO</strong><input type="text" name="input" id="input" value=""
+                    placeholder="Entrez votre userneme"><button id="login">Login</button><button
+                    id="logout">Logout</button>
                 <ul id='menu'>
-                    <li>coucou</li>
-                    <li>toto</li>
-                    <li>tata</li>
+                    <li class="Service">coucou</li>
+                    <li class="li">Articles</li>
+                    <li class="li">Boutique</li>
                 </ul>
+                <p id="user"></p>
             </nav>
             <section></section>
         </header>
@@ -27,4 +37,5 @@
 
     <script src="./js/main.module.js" type="module"></script>
 </body>
+
 </html>

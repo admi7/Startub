@@ -1,19 +1,6 @@
 
-var i = 0;
+import { input, user } from "../main.module.js";
 
-const nav = document.getElementById('menu') 
-
-
-    export const menu = nav.addEventListener('click', function item (value) {
-        for (let i = 0; i < nav.length; i++) {
-            const element = nav[i];
-            console.log(element)
-        }
-    })
-
-    
-
-    
-
-export const user = prompt('username ?')
-
+export const saisi = input.addEventListener('change', function (value) {
+    console.log(this.value)
+})
