@@ -1,0 +1,14 @@
+
+    {
+        "name": "mesOutils",
+        "description": "outils de lieson entre les page",
+        "authors": "author",
+        "version": "1.0.0",
+        "main": "/project-web/portfolio-officiel",
+        "dependencies": {
+            "bootstrap": "^5.0.1",
+            "jquery": "^3.6.0",
+            "vue": "^2.6.12",
+            "webpack": "^5.38.1"
+        }
+    }
