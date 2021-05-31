@@ -1,4 +1,4 @@
-nav {
+nav, ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,12 +35,28 @@ header {
 }
 
 body {
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #1b1b1b;
+}
+
+a {
+  color: #1b1b1b;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-transition: .7s all ease-in-out;
+  transition: .7s all ease-in-out;
 }
 
 nav {
-  background-color: red;
+  background-color: #ffffff;
+  color: #1b1b1b;
   padding: 20px;
+  -webkit-box-shadow: 0 0 20px #1b1b1b;
+          box-shadow: 0 0 20px #1b1b1b;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

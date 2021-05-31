@@ -1,0 +1,17 @@
+
+
+@import './dist/variable';
+@import './dist/placeholder';
+
+
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    @extend %column-center-evenly;
+    background-color: red;
+    min-height: 100vh;
+}
+.tabs .active {
+    color: crimson;
+}

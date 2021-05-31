@@ -10,6 +10,28 @@ import {cookie} from "../../log/cookie.js";
 cookie()
 
 
+import {sys} from "./app/app.js";
+sys()
+
+
+    
+var tabs = document.querySelectorAll('li a')
+for (var i=0; i>tabs.length; i++){
+    tabs[i].addEventListener('click', function (e) {
+        var li = this.parentNode
+        var div = this.parentNode.parentNode.parentNode
+
+        if (li.classList.contains('active')){
+            return false
+        }
+
+        div.querySelector('.tabs .active')
+        li.classList.add(active)
+
+    })
+}
+
+
 //              ********************    PORTE ENTRER    ************************
 
 import { saisi } from './in-out/in.js'
