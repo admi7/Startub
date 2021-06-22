@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Benne&family=Great+Vibes&family=Rubik+Mono+One&family=Viaoda+Libre&display=swap');
+
+@import './dist/placeholder';
+@import './dist/variable';
+
+
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Benne', serif;
+// font-family: 'Great Vibes', cursive;
+// font-family: 'Rubik Mono One', sans-serif;
+// font-family: 'Viaoda Libre', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5e61b;
+}
+
+main {
+    @extend %column;
+    color: white;
+}
+
+header {
+    background: #ffcfef url('../img/photos/background/Photo_bg.jpg') center / cover no-repeat;
+    background-size: cover;
+}
+header, .header {
+    @extend %column-evenly;
+}
+.header {
+    background-color: #1b1b1b;
+}
+
+nav {
+    @extend %flex-center-between;
+    background-color: #cc3737;
+    width: 100%;
+}
+
+
+

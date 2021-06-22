@@ -1,0 +1,19 @@
+{
+  "name": "startub",
+  "version": "1.0.0",
+  "description": "Project Portfolio",
+  "main": "main.module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admi7/Startub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/admi7/Startub/issues"
+  },
+  "homepage": "https://github.com/admi7/Startub#readme"
+}
