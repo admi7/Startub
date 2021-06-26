@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Benne&family=Great+Vibes&family=Rubik+Mono+One&family=Viaoda+Libre&display=swap");
-nav {
+.nav1, .li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav, .nav, .ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +21,21 @@ nav {
           justify-content: space-between;
 }
 
-main {
+nav strong, .li-btn, .liText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main, #page, .page, header, .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +47,22 @@ main {
           flex-direction: column;
 }
 
-header, .header {
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.liItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +80,28 @@ header, .header {
           justify-content: space-evenly;
 }
 
+.header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav1, .li, .liItems li {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,25 +109,210 @@ header, .header {
           box-sizing: border-box;
 }
 
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #1b1b1b;
+}
+
 body {
-  background-color: #f5e61b;
+  font-family: 'Benne', serif;
+  color: #1b1b1b;
 }
 
 main {
-  color: white;
+  background-color: white;
 }
 
 header {
-  background: #ffcfef url("../img/photos/background/Photo_bg.jpg") center/cover no-repeat;
-  background-size: cover;
+  background: #fffcef url("../img/photos/background/background.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .header {
-  background-color: #1b1b1b;
+  min-height: 100vh;
+  background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
+  color: #ffffff;
 }
 
 nav {
-  background-color: #cc3737;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px #464646;
+          box-shadow: 0 0 15px #464646;
+}
+
+nav strong {
+  width: 150px;
+  font-size: 40px;
+  font-family: 'Benne', serif;
+  color: #1b1b1b;
+  font-family: 'Great Vibes', cursive;
+}
+
+nav strong span {
+  font-size: 16px;
+  padding: 7px;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  border-radius: 4px;
+}
+
+.nav {
   width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #1b1b1b;
+  font-family: 'Abril Fatface', cursive;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+li a:hover {
+  color: white;
+  text-shadow: -4px 3px 10px #1b1b1b;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btns .btn-contact {
+  background: linear-gradient(25deg, rgba(182, 182, 182, 0.562) 30%, white 60%);
+  background-color: none;
+  border: none;
+  color: #1b1b1b;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.btns .btn-shop {
+  color: #1b1b1b;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btns .btn-shop:hover {
+  color: #47ff6f;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btns .btn-contact:hover {
+  background: linear-gradient(45deg, white 20%, #201f1f 80%);
+  color: #ffffff;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.nav1 {
+  padding: 5px;
+}
+
+.nav1 ul {
+  background-color: #111111;
+  margin: 0 5px;
+}
+
+.li {
+  background: transparent;
+  position: absolute;
+  left: 0;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nav1 ul:hover .li {
+  height: 300px;
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.nav1 ul:hover .liItems {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.li-btn {
+  height: 30px;
+  cursor: pointer;
+}
+
+.liText {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #0a0a0a), color-stop(80%, #2e2d2d), to(#4d4c4c));
+  background: linear-gradient(to right, #0a0a0a 30%, #2e2d2d 80%, #4d4c4c);
+}
+
+.liText h3 span {
+  color: aqua;
+}
+
+.liItems {
+  padding: 10px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(30%, #0a0a0a), color-stop(80%, #2e2d2d), to(#4d4c4c));
+  background: linear-gradient(to left, #0a0a0a 30%, #2e2d2d 80%, #4d4c4c);
+  opacity: 0;
+  -webkit-transform: translate(2000px);
+          transform: translate(2000px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.liItems li {
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.header {
+  color: #ffffff;
+}
+
+.header h1 {
+  font-family: 'Abril Fatface', cursive;
+  width: 100%;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.header h1 span {
+  color: aqua;
+  font-size: 50px;
+}
+
+.header section {
+  float: right;
+  width: 450px;
+  height: 300px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px #1b1b1b;
+          box-shadow: 0 4px 8px #1b1b1b;
+  background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
+  color: #1b1b1b;
+  text-align: justify;
+  padding: 101px;
+}
+
+#page, header {
+  min-height: 100vh;
+}
+
+.page {
+  min-height: 600px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

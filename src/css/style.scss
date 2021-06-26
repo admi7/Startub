@@ -16,32 +16,202 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a {
+    text-decoration-line: none;
+    color: $black;
+}
 body {
-    background-color: #f5e61b;
+    font-family: 'Benne', serif;
+    color: $black;
 }
 
 main {
+    background-color: white;
+}
+
+main, #page, .page, header, .header {
     @extend %column;
-    color: white;
 }
 
 header {
-    background: #ffcfef url('../img/photos/background/Photo_bg.jpg') center / cover no-repeat;
-    background-size: cover;
-}
-header, .header {
-    @extend %column-evenly;
-}
-.header {
-    background-color: #1b1b1b;
+    background: #fffcef url('../img/photos/background/background.jpg') center / cover no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;   
 }
 
-nav {
+.header {
+    @extend %column-center;
+    min-height: 100vh;
+    background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
+    color: $white;
+}
+
+nav, .nav, .ul {
     @extend %flex-center-between;
-    background-color: #cc3737;
+}
+nav {
+    background-color: $white;
+    box-shadow: 0 0 15px #464646;
+}
+
+nav strong {
+    @extend %flex-center-evenly;
+    width: 150px;
+    font-size: 40px;
+    font-family: 'Benne', serif;
+    color: $black;
+    font-family: 'Great Vibes', cursive;
+}
+nav strong span {
+    font-size: 16px;
+    padding: 7px;
+    background-color: $white;
+    color: $black;
+    border-radius: 4px;
+}
+
+.nav {
     width: 100%;
 }
 
+li {
+    list-style-type: none;
+}
+li a {
+    text-decoration-line: none;
+    color: $black;
+    font-family: 'Abril Fatface', cursive;
+    transition: all .4s ease-in-out;
+}
+li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: -4px 3px 10px #1b1b1b;
+    transition: all .4s ease-in-out;
+}
+
+.btns .btn-contact {
+    background: linear-gradient(25deg, rgba(182, 182, 182, 0.562) 30%, white 60% );
+    background-color: none;
+    border: none;   
+    color: $black;
+    transition: all .7s ease-in-out;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.btns .btn-shop {
+    color: $black;
+    transition: all .3s ease-in-out;
+}
+.btns .btn-shop:hover {
+    color: rgb(71, 255, 111);
+    transition: all .4s ease-in-out;
+}
+.btns .btn-contact:hover {
+    background: linear-gradient(45deg, rgb(255, 255, 255) 20%, rgb(32, 31, 31) 80% );
+    color: $white;
+    transition: all .6s ease-in-out;
+}
+
+.nav1 {
+    @extend %flex;
+    @extend %w100;
+    padding: 5px;
+
+}
+.nav1 ul {
+    background-color: rgb(17, 17, 17);
+    margin: 0 5px;
+}
+
+.li {
+    @extend %flex;
+    @extend %w100;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.nav1 ul:hover .li {
+    height: 300px;
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+.nav1 ul:hover .liItems {
+    opacity: 1;
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.li-btn {
+    @extend %flex-center-evenly;
+    height: 30px;
+    cursor: pointer;
+}
+.liText {
+    @extend %flex-center-evenly;
+    background: linear-gradient(to right, rgb(10, 10, 10) 30%, rgb(46, 45, 45) 80%, rgb(77, 76, 76));
+}
+.liText h3 span {
+    color: aqua;
+}
+.liItems {
+    @extend %column-evenly;
+    padding: 10px;
+    background: linear-gradient(to left, rgb(10, 10, 10) 30%, rgb(46, 45, 45) 80%, rgb(77, 76, 76));
+    opacity: 0;
+    transform: translate(2000px);
+    transition: all .2s ease-in-out;
+}
+.liItems li  {
+    @extend %w100;
+    padding: 7px;
+    border-radius: 4px;
+
+}
 
 
+
+
+
+.header {
+    color: $white;
+}
+.header h1 {
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: $white;
+    padding: 50px;
+}
+.header h1 span {
+    color: aqua;
+    font-size: 50px;
+}
+.header section {
+    float: right;
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px $black;
+    background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
+    color: $black;
+    @extend %column-center-evenly;
+    text-align: justify;
+    padding: 101px;
+}
+
+
+
+
+
+#page, header {
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 600px;
+    margin-top: 10px;
+}
