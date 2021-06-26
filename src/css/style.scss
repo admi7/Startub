@@ -119,10 +119,20 @@ li a:hover {
 
 }
 .nav1 ul {
-    background-color: rgb(17, 17, 17);
     margin: 0 5px;
 }
-
+.nav1 ul span {
+    color: aqua;
+}
+.nav1 ul a {
+    color: rgb(47, 255, 64);
+    transition: .4s all ease;
+}
+.nav1 ul a:hover {
+    text-decoration-line: underline!important;
+    text-shadow: none;
+    transition: .4s all ease-in;
+}
 .li {
     @extend %flex;
     @extend %w100;
@@ -132,6 +142,7 @@ li a:hover {
     height: 0px;
     opacity: 0;
     overflow: hidden;
+    margin-top: 10px;
     transition: all .4s ease-in-out;
 }
 .nav1 ul:hover .li {
@@ -144,17 +155,26 @@ li a:hover {
     transform: translate(0);
     transition: all 1s ease-in-out;
 }
+.nav1 ul:hover .liText h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.4s all ease;
+}
 .li-btn {
-    @extend %flex-center-evenly;
-    height: 30px;
     cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: $black;
+    padding: 7px;
+    border-radius: 4px;
 }
 .liText {
     @extend %flex-center-evenly;
     background: linear-gradient(to right, rgb(10, 10, 10) 30%, rgb(46, 45, 45) 80%, rgb(77, 76, 76));
 }
-.liText h3 span {
-    color: aqua;
+.liText h3 {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: .3s all ease;
 }
 .liItems {
     @extend %column-evenly;
@@ -168,7 +188,6 @@ li a:hover {
     @extend %w100;
     padding: 7px;
     border-radius: 4px;
-
 }
 
 

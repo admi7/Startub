@@ -21,7 +21,7 @@ nav, .nav, .ul {
           justify-content: space-between;
 }
 
-nav strong, .li-btn, .liText {
+nav strong, .liText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,8 +216,25 @@ li a:hover {
 }
 
 .nav1 ul {
-  background-color: #111111;
   margin: 0 5px;
+}
+
+.nav1 ul span {
+  color: aqua;
+}
+
+.nav1 ul a {
+  color: #2fff40;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+.nav1 ul a:hover {
+  -webkit-text-decoration-line: underline !important;
+          text-decoration-line: underline !important;
+  text-shadow: none;
+  -webkit-transition: .4s all ease-in;
+  transition: .4s all ease-in;
 }
 
 .li {
@@ -227,6 +244,7 @@ li a:hover {
   height: 0px;
   opacity: 0;
   overflow: hidden;
+  margin-top: 10px;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -246,9 +264,20 @@ li a:hover {
   transition: all 1s ease-in-out;
 }
 
+.nav1 ul:hover .liText h3 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1.4s all ease;
+  transition: 1.4s all ease;
+}
+
 .li-btn {
-  height: 30px;
   cursor: pointer;
+  background-color: white;
+  color: #1b1b1b;
+  padding: 7px;
+  border-radius: 4px;
 }
 
 .liText {
@@ -256,8 +285,12 @@ li a:hover {
   background: linear-gradient(to right, #0a0a0a 30%, #2e2d2d 80%, #4d4c4c);
 }
 
-.liText h3 span {
-  color: aqua;
+.liText h3 {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .liItems {
