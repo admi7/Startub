@@ -116,7 +116,7 @@ li a:hover {
     @extend %flex;
     @extend %w100;
     padding: 5px;
-
+    z-index: 9;
 }
 .nav1 ul {
     margin: 0 5px;
@@ -125,7 +125,7 @@ li a:hover {
     color: aqua;
 }
 .nav1 ul a {
-    color: rgb(47, 255, 64);
+    color: rgb(47, 255, 210);
     transition: .4s all ease;
 }
 .nav1 ul a:hover {
@@ -142,7 +142,6 @@ li a:hover {
     height: 0px;
     opacity: 0;
     overflow: hidden;
-    margin-top: 10px;
     transition: all .4s ease-in-out;
 }
 .nav1 ul:hover .li {
@@ -209,20 +208,69 @@ li a:hover {
     color: aqua;
     font-size: 50px;
 }
-.header section {
-    float: right;
-    width: 450px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px $black;
-    background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
-    color: $black;
-    @extend %column-center-evenly;
-    text-align: justify;
-    padding: 101px;
+.header h1 strong {
+    font-size: 55px;
+    padding-left: 20px;
 }
 
-
+.header section {
+    @extend %flex-evenly;
+    padding: 5px;
+    margin-top: 15px;
+    color: $black;
+}
+.infos {
+    width: 400px;
+    height: 350px;
+    background-color: white;    
+    border-radius: 5px;
+}
+.infos p {
+    font-size: 25px;
+    padding: 7px;
+    text-align: justify;
+}
+.decor {
+    @extend %column-center-between;
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+.decor a {
+    text-decoration-line: none;
+    color: $black;
+    background-color: rgba(60, 227, 233, 0.849);
+    @extend %column-center-between;
+    width: 175px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .6s all ease-out;
+}
+.decor a:hover {
+    color: $black;
+    background-color: #fff;
+    box-shadow: 0 0 5px $black;
+    transition: .6s all ease-out;
+}
+.decoration {
+    @extend %column-center-between;
+    height: 200px;
+    background-color: $black;
+    overflow: hidden;
+}
+.decoration img {
+    @extend %w100;
+    object-fit: cover;
+    opacity: 0.4;
+    transition: .6s all ease-in;
+}
+.decoration:hover img {
+    opacity: 1;
+    transition: .6s all ease-out;
+}
 
 
 
