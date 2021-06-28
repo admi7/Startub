@@ -5,18 +5,29 @@
   "author": "",
   "scripts": {
     "lint": "vue-cli-service lint",
+    "apollo": "vue-cli-service apollo:dev --generate-schema",
+    "apollo:schema:generate": "vue-cli-service apollo:schema:generate",
+    "apollo:schema:publish": "vue-cli-service apollo:schema:publish",
+    "apollo:start": "vue-cli-service apollo:start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "index.js",
   "dependencies": {
-    "config-js": "^1.1.15"
+    "config-js": "^1.1.15",
+    "graphql-type-json": "^0.2.1",
+    "lowdb": "^1.0.0",
+    "mkdirp": "^0.5.1",
+    "shortid": "^2.2.8",
+    "vue-apollo": "^3.0.0-beta.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "eslint": "^6.7.2",
+    "eslint-plugin-graphql": "^2.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "graphql-tag": "^2.9.0",
     "vue-cli-plugin-apollo": "~0.22.2",
     "webpack-cli": "^4.7.2"
   },
