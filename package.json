@@ -2,7 +2,7 @@
   "name": "startub",
   "version": "1.0.0",
   "description": "Project Portfolio",
-  "main": "main.module.js",
+  "main": "./src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/admi7/Startub/issues"
   },
-  "homepage": "https://github.com/admi7/Startub#readme"
+  "homepage": "https://github.com/admi7/Startub#readme",
+  "devDependencies": {
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "config-js": "^1.1.15"
+  }
 }

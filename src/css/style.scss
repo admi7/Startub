@@ -160,8 +160,9 @@ li a:hover {
     transition: 1.4s all ease;
 }
 .li-btn {
+    @extend %w100;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
     color: $black;
     padding: 7px;
     border-radius: 4px;
@@ -199,17 +200,17 @@ li a:hover {
 .header h1 {
     font-family: 'Abril Fatface', cursive;
     width: 100%;
-    font-size: 44px;
+    font-size: 55px;
     text-transform: uppercase;
     color: $white;
-    padding: 50px;
+    padding: 20px;
 }
 .header h1 span {
     color: aqua;
-    font-size: 50px;
+    font-size: 70px;
 }
 .header h1 strong {
-    font-size: 55px;
+    font-size: 65px;
     padding-left: 20px;
 }
 
@@ -220,23 +221,29 @@ li a:hover {
     color: $black;
 }
 .infos {
-    width: 400px;
-    height: 350px;
-    background-color: white;    
+    width: 600px;
+    height: auto;
+    margin-top: -50px;
+    background: linear-gradient(12deg, white 15%, white 20%, rgba(0, 0, 0, 0.329) 80%);
     border-radius: 5px;
 }
 .infos p {
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px;
-    text-align: justify;
+    color: white;
 }
 .decor {
     @extend %column-center-between;
     width: 300px;
-    height: 400px;
+    height: auto;
     border-radius: 12px;
     overflow: hidden;
     background-color: white;
+    margin-top: 200px;
+}
+.decor:hover .decoration img {
+    opacity: 1;
+    transition: .6s all ease-out;
 }
 .decor a {
     text-decoration-line: none;
@@ -266,10 +273,6 @@ li a:hover {
     object-fit: cover;
     opacity: 0.4;
     transition: .6s all ease-in;
-}
-.decoration:hover img {
-    opacity: 1;
-    transition: .6s all ease-out;
 }
 
 
