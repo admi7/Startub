@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an About page</h1>
+  <div class="service">
+    <h1>This is an contact page</h1>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 // @ is an alias to /src
 
 export default {
-  name: "About",
+  name: "Serivice",
   components: {
     
   },

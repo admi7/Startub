@@ -24,23 +24,25 @@ var routes = [{
 }, {
   path: "/about",
   name: "About",
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
   component: function component() {
     return Promise.resolve().then(function () {
       return _interopRequireWildcard(require("../views/About.vue"));
     });
   }
 }, {
-  path: "/services",
-  name: "Services",
-  // route level code-splitting
-  // this generates a separate chunk (services.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
+  path: "/service",
+  name: "Service",
   component: function component() {
     return Promise.resolve().then(function () {
-      return _interopRequireWildcard(require("../views/services.vue"));
+      return _interopRequireWildcard(require("../views/service.vue"));
+    });
+  }
+}, {
+  path: "/contact",
+  name: "Contact",
+  component: function component() {
+    return Promise.resolve().then(function () {
+      return _interopRequireWildcard(require("../views/contact.vue"));
     });
   }
 }];
